@@ -1,0 +1,18 @@
+<div class="ColorSelector">
+
+  <div class="ColorSelector-btn" style="background-color:#eee;"
+    ng-class="{isSelected:allSelected}"
+    ng-click="clickAll()" 
+  >
+    <span class="ColorSelector-allCopy">ALL</span>
+  </div>
+  
+  <div class="ColorSelector-btn"
+    ng-class="{isSelected:color.selected}" 
+    ng-click="clickColor(color)"
+    ng-repeat="color in colors" 
+    ng-style="{backgroundColor:fcolor(color)}"
+  >
+  </div>
+  
+</div>
